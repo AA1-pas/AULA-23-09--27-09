@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CestaDeFrutas", "CestoDeFrutas\CestaDeFrutas.csproj", "{B156024A-2F62-4BA7-81BF-9F23D0CA2277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicios", "Exercicios\Exercicios.csproj", "{ADA815EF-F981-4A20-B120-57DC060DC178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B156024A-2F62-4BA7-81BF-9F23D0CA2277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B156024A-2F62-4BA7-81BF-9F23D0CA2277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B156024A-2F62-4BA7-81BF-9F23D0CA2277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B156024A-2F62-4BA7-81BF-9F23D0CA2277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA815EF-F981-4A20-B120-57DC060DC178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA815EF-F981-4A20-B120-57DC060DC178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA815EF-F981-4A20-B120-57DC060DC178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA815EF-F981-4A20-B120-57DC060DC178}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8848A517-9572-4D2C-8AC1-932FF70E4A7F}
+	EndGlobalSection
+EndGlobal
