@@ -166,20 +166,20 @@ namespace Exercicios
                 .ForEach(x => Console.WriteLine($"Id: {x.Id}  Nome: {x.Nome}  Nascimento: {x.Nascimento.ToShortDateString()}  Carteira: {x.Carteira.ToString("C2")}"));
             Console.WriteLine("\n\n---------------------------------PESSOAS COM MAIS DE 18 ANOS--------------------------------------\n");
 
-        
+            
             foreach (var pessoa in listaPessoas)
             {
-                TimeSpan idade = DateTime.Now - pessoa.Nascimento;
-                if (idade.Days/365 > 18)
-                Console.WriteLine($"Id: {pessoa.Id}  Nome: {pessoa.Nome}  Idade:{idade.Days/365}");
+                var idade = DateTime.Now.Year - pessoa.Nascimento.Year;
+                if (idade >18)
+                    Console.WriteLine($"Id: {pessoa.Id}  Nome: {pessoa.Nome}  Idade:{idade}");
               
             }
             Console.WriteLine("\n\n-------------------------------PESSOAS COM MENOS DE 16 ANOS----------------------------------------------\n");
             foreach (var pessoa in listaPessoas)
             {
-                TimeSpan idade = DateTime.Now - pessoa.Nascimento;
-                if (idade.Days/365 < 16)
-                    Console.WriteLine($"Id: {pessoa.Id}  Nome: {pessoa.Nome}  Idade:{idade.Days / 365}");
+                var idade = DateTime.Now.Year - pessoa.Nascimento.Year;
+                if (idade < 16)
+                    Console.WriteLine($"Id: {pessoa.Id}  Nome: {pessoa.Nome}  Idade:{idade}");
 
             }
             Console.ReadKey();
