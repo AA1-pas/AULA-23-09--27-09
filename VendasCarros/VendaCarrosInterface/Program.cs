@@ -9,41 +9,47 @@ using VendaCarrosBiblioteca.Model;
 namespace VendaCarrosInterface
 {
    
-        class Program
+    class Program
+    {
+        private static VendasController vendasController = new VendasController();
+        static void Main(string[] args)
         {
-            private static VendasController vendasController = new VendasController();
-            static void Main(string[] args)
-            {
-                Console.WriteLine("--------------SISTEMA DE VENDAS DE CARROS--------------");
-                MenuPrincipal();
-            }
+                
+            MenuPrincipal();
+        }
 
-            public static void MenuPrincipal()
+        public static void MenuPrincipal()
+        {
+            int opcao = int.MinValue;
+            while (opcao != 3)
             {
+                Console.Clear();
+                Console.WriteLine("--------------SISTEMA DE VENDAS DE CARROS--------------");
                 Console.WriteLine("Selecione uma das opções abaixo:");
                 Console.WriteLine("1 - Listar todas as vendas já realizadas");
                 Console.WriteLine("2 - Gerar Relatórios");
                 Console.WriteLine("3 - Sair\n");
                 Console.Write("Opção: ");
-                char opcao = Console.ReadKey().KeyChar;
+                int.TryParse(Console.ReadLine(), out opcao);
                 switch (opcao)
                 {
-                    case '1':
-                    Console.WriteLine("\n");
-                       vendasController.listaCompleta().ForEach(x => ImpressaoDados(x));
-                    Console.ReadKey();
+                    case 1:
+                        Console.WriteLine("\n");
+                        vendasController.listaCompleta().ForEach(x => ImpressaoDados(x));
+                        Console.ReadKey();
                         break;
                 }
             }
-
-            public static void ImpressaoDados(Carro carro)
-            {
-                string template = "Id: {0,2}   Carro: {1,-25}  Valor: {2,10}  Quantidade: {3,3}  Data: {4,10}";
-                string textoFormatado = string.Format(template, carro.Id, carro.Modelo,
-                    carro.Quantidade, carro.Valor.ToString("C2"), carro.DataVenda.ToShortDateString());
-                Console.WriteLine(textoFormatado);
-            }
-
         }
+
+        public static void ImpressaoDados(Carro carro)
+        {
+            string template = "Id: {0,4}   Carro: {1,20}  Valor: {2,10}  Quantidade: {3,3}  Data: {4,10}";
+            string textoFormatado = string.Format(template, carro.Id, carro.Modelo,
+                carro.Quantidade, carro.Valor.ToString("C2"), carro.DataVenda.ToShortDateString());
+            Console.WriteLine(textoFormatado);
+        }
+
+    }
     
 }

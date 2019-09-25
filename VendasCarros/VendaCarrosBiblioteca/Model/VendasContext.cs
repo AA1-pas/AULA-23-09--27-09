@@ -15,15 +15,15 @@ namespace VendaCarrosBiblioteca.Model
             listaVendaCarros = new List<Carro>();
 
             #region Lista de Dados
-            listaVendaCarros.Add(new Carro() { Id = 1, Modelo = "Risus Company                      ", Valor = 7200, Quantidade = 18, DataVenda = DateTime.Parse("29/01/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 2, Modelo = "Risus Associates                   ", Valor = 9961, Quantidade = 4, DataVenda = DateTime.Parse("10/02/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 3, Modelo = "Et Libero Proin Foundation         ", Valor = 8710, Quantidade = 17, DataVenda = DateTime.Parse("24/01/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 4, Modelo = "Cursus Et Ltd                      ", Valor = 9010, Quantidade = 17, DataVenda = DateTime.Parse("26/10/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 5, Modelo = "Odio Etiam Ligula Company          ", Valor = 5245, Quantidade = 8, DataVenda = DateTime.Parse("16/02/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 6, Modelo = "Eu Nibh Inc.                       ", Valor = 7922, Quantidade = 9, DataVenda = DateTime.Parse("27/06/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 7, Modelo = "Tellus Limited                     ", Valor = 7294, Quantidade = 7, DataVenda = DateTime.Parse("26/01/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 8, Modelo = "Imperdiet PC                       ", Valor = 8305, Quantidade = 5, DataVenda = DateTime.Parse("06/09/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 9, Modelo = "Elit Inc.	                        ", Valor = 5398, Quantidade = 18, DataVenda = DateTime.Parse("09/06/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 1, Modelo = "Risus Company                       ", Valor = 7200, Quantidade = 18, DataVenda = DateTime.Parse("29/01/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 2, Modelo = "Risus Associates                    ", Valor = 9961, Quantidade = 4, DataVenda = DateTime.Parse("10/02/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 3, Modelo = "Et Libero Proin Foundation          ", Valor = 8710, Quantidade = 17, DataVenda = DateTime.Parse("24/01/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 4, Modelo = "Cursus Et Ltd                       ", Valor = 9010, Quantidade = 17, DataVenda = DateTime.Parse("26/10/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 5, Modelo = "Odio Etiam Ligula Company           ", Valor = 5245, Quantidade = 8, DataVenda = DateTime.Parse("16/02/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 6, Modelo = "Eu Nibh Inc.                        ", Valor = 7922, Quantidade = 9, DataVenda = DateTime.Parse("27/06/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 7, Modelo = "Tellus Limited                      ", Valor = 7294, Quantidade = 7, DataVenda = DateTime.Parse("26/01/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 8, Modelo = "Imperdiet PC                        ", Valor = 8305, Quantidade = 5, DataVenda = DateTime.Parse("06/09/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 9, Modelo = "Elit Inc.	                         ", Valor = 5398, Quantidade = 18, DataVenda = DateTime.Parse("09/06/2019") });
             listaVendaCarros.Add(new Carro() { Id = 10, Modelo = "Quam A Limited                     ", Valor = 5398, Quantidade = 14, DataVenda = DateTime.Parse("09/09/2019") });
             listaVendaCarros.Add(new Carro() { Id = 11, Modelo = "Adipiscing Institute               ", Valor = 8133, Quantidade = 4, DataVenda = DateTime.Parse("24/10/2019") });
             listaVendaCarros.Add(new Carro() { Id = 12, Modelo = "Posuere At Velit Ltd               ", Valor = 5121, Quantidade = 15, DataVenda = DateTime.Parse("19/11/2019") });
@@ -33,34 +33,34 @@ namespace VendaCarrosBiblioteca.Model
             listaVendaCarros.Add(new Carro() { Id = 16, Modelo = "Suspendisse LLC                    ", Valor = 5319, Quantidade = 12, DataVenda = DateTime.Parse("24/12/2019") });
             listaVendaCarros.Add(new Carro() { Id = 17, Modelo = "Mauris Vestibulum Corporation      ", Valor = 5790, Quantidade = 5, DataVenda = DateTime.Parse("14/11/2019") });
             listaVendaCarros.Add(new Carro() { Id = 18, Modelo = "Sed Nec Corp.                      ", Valor = 8421, Quantidade = 2, DataVenda = DateTime.Parse("05/05/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 19, Modelo = "Enim Nisl Elementum Inc.	        ", Valor = 5904, Quantidade = 6, DataVenda = DateTime.Parse("26/06/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 19, Modelo = "Enim Nisl Elementum Inc.	         ", Valor = 5904, Quantidade = 6, DataVenda = DateTime.Parse("26/06/2019") });
             listaVendaCarros.Add(new Carro() { Id = 20, Modelo = "Ac Mattis Semper Corporation       ", Valor = 5110, Quantidade = 4, DataVenda = DateTime.Parse("14/01/2019") });
             listaVendaCarros.Add(new Carro() { Id = 21, Modelo = "Donec Tempus Lorem LLC             ", Valor = 8576, Quantidade = 16, DataVenda = DateTime.Parse("29/03/2019") });
             listaVendaCarros.Add(new Carro() { Id = 22, Modelo = "Tempor Augue Ac Ltd                ", Valor = 9072, Quantidade = 16, DataVenda = DateTime.Parse("09/07/2019") });
             listaVendaCarros.Add(new Carro() { Id = 23, Modelo = "Diam Duis Mi LLC                   ", Valor = 8472, Quantidade = 4, DataVenda = DateTime.Parse("23/09/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 24, Modelo = "Aliquam Corp.	                    ", Valor = 6607, Quantidade = 4, DataVenda = DateTime.Parse("28/09/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 24, Modelo = "Aliquam Corp.	                     ", Valor = 6607, Quantidade = 4, DataVenda = DateTime.Parse("28/09/2019") });
             listaVendaCarros.Add(new Carro() { Id = 25, Modelo = "Montes Institute                   ", Valor = 6176, Quantidade = 8, DataVenda = DateTime.Parse("19/06/2019") });
             listaVendaCarros.Add(new Carro() { Id = 26, Modelo = "Hendrerit Institute                ", Valor = 8387, Quantidade = 11, DataVenda = DateTime.Parse("17/09/2019") });
             listaVendaCarros.Add(new Carro() { Id = 27, Modelo = "Erat Etiam Vestibulum Corporation  ", Valor = 7584, Quantidade = 9, DataVenda = DateTime.Parse("02/06/2019") });
             listaVendaCarros.Add(new Carro() { Id = 28, Modelo = "Adipiscing Ltd                     ", Valor = 7887, Quantidade = 9, DataVenda = DateTime.Parse("19/03/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 29, Modelo = "In Tempus Eu Inc.	                ", Valor = 5233, Quantidade = 16, DataVenda = DateTime.Parse("20/07/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 29, Modelo = "In Tempus Eu Inc.	                 ", Valor = 5233, Quantidade = 16, DataVenda = DateTime.Parse("20/07/2019") });
             listaVendaCarros.Add(new Carro() { Id = 30, Modelo = "Elit Institute                     ", Valor = 7359, Quantidade = 11, DataVenda = DateTime.Parse("12/09/2019") });
             listaVendaCarros.Add(new Carro() { Id = 31, Modelo = "Aliquam Erat LLC                   ", Valor = 8842, Quantidade = 4, DataVenda = DateTime.Parse("14/03/2019") });
             listaVendaCarros.Add(new Carro() { Id = 32, Modelo = "A Feugiat Tellus PC                ", Valor = 9176, Quantidade = 4, DataVenda = DateTime.Parse("10/12/2019") });
             listaVendaCarros.Add(new Carro() { Id = 33, Modelo = "Aliquet Incorporated               ", Valor = 9057, Quantidade = 8, DataVenda = DateTime.Parse("26/04/2019") });
             listaVendaCarros.Add(new Carro() { Id = 34, Modelo = "Dolor Dolor Tempus Institute       ", Valor = 8433, Quantidade = 15, DataVenda = DateTime.Parse("31/10/2019") });
             listaVendaCarros.Add(new Carro() { Id = 35, Modelo = "Risus Odio Auctor PC               ", Valor = 8286, Quantidade = 11, DataVenda = DateTime.Parse("29/03/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 36, Modelo = "Aliquet Molestie Tellus Corp.	    ", Valor = 8779, Quantidade = 1, DataVenda = DateTime.Parse("05/07/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 37, Modelo = "Ipsum Corp.	                    ", Valor = 5568, Quantidade = 15, DataVenda = DateTime.Parse("10/03/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 36, Modelo = "Aliquet Molestie Tellus Corp.	     ", Valor = 8779, Quantidade = 1, DataVenda = DateTime.Parse("05/07/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 37, Modelo = "Ipsum Corp.	                     ", Valor = 5568, Quantidade = 15, DataVenda = DateTime.Parse("10/03/2019") });
             listaVendaCarros.Add(new Carro() { Id = 38, Modelo = "Mi Lacinia Foundation              ", Valor = 7442, Quantidade = 20, DataVenda = DateTime.Parse("09/07/2019") });
             listaVendaCarros.Add(new Carro() { Id = 39, Modelo = "Cubilia Curae; Corp.               ", Valor = 8421, Quantidade = 7, DataVenda = DateTime.Parse("26/05/2019") });
             listaVendaCarros.Add(new Carro() { Id = 40, Modelo = "Velit Sed Malesuada Associates     ", Valor = 9841, Quantidade = 6, DataVenda = DateTime.Parse("07/11/2019") });
             listaVendaCarros.Add(new Carro() { Id = 41, Modelo = "Duis Foundation                    ", Valor = 9849, Quantidade = 6, DataVenda = DateTime.Parse("08/12/2019") });
             listaVendaCarros.Add(new Carro() { Id = 42, Modelo = "Erat Semper Consulting             ", Valor = 6168, Quantidade = 10, DataVenda = DateTime.Parse("10/11/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 43, Modelo = "Turpis Inc.	                    ", Valor = 7758, Quantidade = 7, DataVenda = DateTime.Parse("12/08/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 43, Modelo = "Turpis Inc.	                     ", Valor = 7758, Quantidade = 7, DataVenda = DateTime.Parse("12/08/2019") });
             listaVendaCarros.Add(new Carro() { Id = 44, Modelo = "Aenean Industries                  ", Valor = 8770, Quantidade = 12, DataVenda = DateTime.Parse("10/09/2019") });
             listaVendaCarros.Add(new Carro() { Id = 45, Modelo = "Nulla Industries                   ", Valor = 8884, Quantidade = 8, DataVenda = DateTime.Parse("10/11/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 46, Modelo = "Semper Egestas Urna Inc.	        ", Valor = 9428, Quantidade = 11, DataVenda = DateTime.Parse("26/06/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 46, Modelo = "Semper Egestas Urna Inc.	         ", Valor = 9428, Quantidade = 11, DataVenda = DateTime.Parse("26/06/2019") });
             listaVendaCarros.Add(new Carro() { Id = 47, Modelo = "Donec Luctus Aliquet Industries    ", Valor = 5928, Quantidade = 8, DataVenda = DateTime.Parse("11/07/2019") });
             listaVendaCarros.Add(new Carro() { Id = 48, Modelo = "Cum Sociis Natoque Foundation      ", Valor = 7506, Quantidade = 2, DataVenda = DateTime.Parse("21/07/2019") });
             listaVendaCarros.Add(new Carro() { Id = 49, Modelo = "Vitae Sodales Limited              ", Valor = 8912, Quantidade = 8, DataVenda = DateTime.Parse("22/06/2019") });
@@ -69,7 +69,7 @@ namespace VendaCarrosBiblioteca.Model
             listaVendaCarros.Add(new Carro() { Id = 52, Modelo = "Sed Dictum Institute               ", Valor = 9243, Quantidade = 14, DataVenda = DateTime.Parse("26/06/2019") });
             listaVendaCarros.Add(new Carro() { Id = 53, Modelo = "Sed Turpis Company                 ", Valor = 7243, Quantidade = 14, DataVenda = DateTime.Parse("20/08/2019") });
             listaVendaCarros.Add(new Carro() { Id = 54, Modelo = "Vitae Diam Proin Associates        ", Valor = 6631, Quantidade = 2, DataVenda = DateTime.Parse("10/06/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 55, Modelo = "Curabitur Inc.	                    ", Valor = 8090, Quantidade = 3, DataVenda = DateTime.Parse("09/02/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 55, Modelo = "Curabitur Inc.	                 ", Valor = 8090, Quantidade = 3, DataVenda = DateTime.Parse("09/02/2019") });
             listaVendaCarros.Add(new Carro() { Id = 56, Modelo = "Suscipit Est Ac LLC                ", Valor = 8567, Quantidade = 15, DataVenda = DateTime.Parse("08/03/2019") });
             listaVendaCarros.Add(new Carro() { Id = 57, Modelo = "Neque Morbi Industries             ", Valor = 5171, Quantidade = 1, DataVenda = DateTime.Parse("03/10/2019") });
             listaVendaCarros.Add(new Carro() { Id = 58, Modelo = "Non Ltd                            ", Valor = 5102, Quantidade = 19, DataVenda = DateTime.Parse("14/08/2019") });
@@ -112,9 +112,9 @@ namespace VendaCarrosBiblioteca.Model
             listaVendaCarros.Add(new Carro() { Id = 95, Modelo = "Sem Ut Corp.                       ", Valor = 6504, Quantidade = 11, DataVenda = DateTime.Parse("02/02/2019") });
             listaVendaCarros.Add(new Carro() { Id = 96, Modelo = "Dui Fusce Aliquam PC               ", Valor = 7837, Quantidade = 2, DataVenda = DateTime.Parse("08/12/2019") });
             listaVendaCarros.Add(new Carro() { Id = 97, Modelo = "Nisl Sem Industries                ", Valor = 6835, Quantidade = 5, DataVenda = DateTime.Parse("14/11/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 98, Modelo = "Vitae Corp.	                    ", Valor = 7669, Quantidade = 7, DataVenda = DateTime.Parse("09/11/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 98, Modelo = "Vitae Corp.	                     ", Valor = 7669, Quantidade = 7, DataVenda = DateTime.Parse("09/11/2019") });
             listaVendaCarros.Add(new Carro() { Id = 99, Modelo = "Malesuada Incorporated             ", Valor = 5960, Quantidade = 4, DataVenda = DateTime.Parse("26/09/2019") });
-            listaVendaCarros.Add(new Carro() { Id = 100, Modelo = "Mauris Ltd                         ", Valor = 8974, Quantidade = 18, DataVenda = DateTime.Parse("16/05/2019") });
+            listaVendaCarros.Add(new Carro() { Id = 100, Modelo= "Mauris Ltd                         ", Valor = 8974, Quantidade = 18, DataVenda = DateTime.Parse("16/05/2019") });
             #endregion
         }
     }
