@@ -12,6 +12,8 @@ namespace VendaCarrosBiblioteca.Model
 
         public VendasContext()
         {
+            listaVendaCarros = new List<Carro>();
+
             #region Lista de Dados
             listaVendaCarros.Add(new Carro() { Id = 1, Modelo = "Risus Company                      ", Valor = 7200, Quantidade = 18, DataVenda = DateTime.Parse("29/01/2019") });
             listaVendaCarros.Add(new Carro() { Id = 2, Modelo = "Risus Associates                   ", Valor = 9961, Quantidade = 4, DataVenda = DateTime.Parse("10/02/2019") });

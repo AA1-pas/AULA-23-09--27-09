@@ -1,10 +1,10 @@
-﻿using ClassLibrary1;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using VendaCarrosBiblioteca.Controller;
+using VendaCarrosBiblioteca.Model;
 
 namespace VendaCarrosInterface
 {
@@ -29,7 +29,9 @@ namespace VendaCarrosInterface
                 switch (opcao)
                 {
                     case '1':
-                        vendasController.listaCompleta().ForEach(x => ImpressaoDados(x));
+                    Console.WriteLine("\n");
+                       vendasController.listaCompleta().ForEach(x => ImpressaoDados(x));
+                    Console.ReadKey();
                         break;
                 }
             }

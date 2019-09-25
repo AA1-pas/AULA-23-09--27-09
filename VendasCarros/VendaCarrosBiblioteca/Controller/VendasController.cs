@@ -11,10 +11,10 @@ namespace VendaCarrosBiblioteca.Controller
     {
         public VendasContext vendasContextDB = new VendasContext();
 
-        public List<Carro> listaCompleta()
-        {
-            return vendasContextDB.listaVendaCarros.OrderBy(x => x.Id).ToList();
-        }
+       public List<Carro> listaCompleta()
+       {
+           return vendasContextDB.listaVendaCarros.OrderBy(x => x.Id).ToList();
+       }
 
     }
 }
