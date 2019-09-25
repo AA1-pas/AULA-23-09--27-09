@@ -38,16 +38,25 @@ namespace VendaCarrosInterface
                         vendasController.listaCompleta().ForEach(x => ImpressaoDados(x));
                         Console.WriteLine("\nPresione qualquer tecla para retornar.");
                         Console.ReadKey();
-                        break;
+                    break;
+                    case 2:
+                        Console.WriteLine("\nDigite o mês que deseja gerar o relatório.");
+                        int.TryParse(Console.ReadLine(), out int mesFiltro);
+                        vendasController.listaCompleta().FindAll(x => x.DataVenda.Month == mesFiltro).ForEach(x => ImpressaoDados(x));
+                        Console.WriteLine("O valor total das vendas é de : {0}",vendasController.listaCompleta().Sum(x => x.Valor).ToString("C2"));
+                        Console.WriteLine("O valor total das vendas é de : {0}", vendasController.listaCompleta().Sum(x => x.Valor).ToString("C2"));
+                        Console.WriteLine("\nPresione qualquer tecla para retornar.");
+                        Console.ReadKey();
+                    break;
                 }
             }
         }
 
         public static void ImpressaoDados(Carro carro)
         {
-            string template = "Id: {0,4}   Carro: {1,35}  Valor: {2,10}  Quantidade: {3,3}  Data: {4,10}";
+            string template = "Id: {0,3}   Carro: {1,-35}  Valor: {2,8}  Quantidade: {3,3}  Data: {4,12}";
             string textoFormatado = string.Format(template, carro.Id, carro.Modelo,
-                carro.Quantidade, carro.Valor.ToString("C2"), carro.DataVenda.ToShortDateString());
+                 carro.Valor.ToString("C2"), carro.Quantidade, carro.DataVenda.ToShortDateString());
             Console.WriteLine(textoFormatado);
         }
 
