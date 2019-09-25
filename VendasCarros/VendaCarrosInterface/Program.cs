@@ -36,6 +36,7 @@ namespace VendaCarrosInterface
                     case 1:
                         Console.WriteLine("\n");
                         vendasController.listaCompleta().ForEach(x => ImpressaoDados(x));
+                        Console.WriteLine("\nPresione qualquer tecla para retornar.");
                         Console.ReadKey();
                         break;
                 }
@@ -44,7 +45,7 @@ namespace VendaCarrosInterface
 
         public static void ImpressaoDados(Carro carro)
         {
-            string template = "Id: {0,4}   Carro: {1,20}  Valor: {2,10}  Quantidade: {3,3}  Data: {4,10}";
+            string template = "Id: {0,4}   Carro: {1,35}  Valor: {2,10}  Quantidade: {3,3}  Data: {4,10}";
             string textoFormatado = string.Format(template, carro.Id, carro.Modelo,
                 carro.Quantidade, carro.Valor.ToString("C2"), carro.DataVenda.ToShortDateString());
             Console.WriteLine(textoFormatado);
