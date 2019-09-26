@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,47 @@ namespace VendaCarrosBiblioteca.Model
 {
      public  class VendasContext
     {
-        public List<Carro> listaVendaCarros { get; set; }
+        private List<Carro> listaVendaCarros { get; set; }
 
+        /// <summary>
+        /// Metodo importa e adiciona a lista os dados
+        /// </summary>
         public VendasContext()
         {
-            listaVendaCarros = new List<Carro>();
+            using (StreamReader read = new StreamReader("C:\\Users\\900063\\OneDrive\\Treinamento HBSIS\\DadosVendasCarros.csv", false))
+            {
+                listaVendaCarros = new List<Carro>();
+                int cont = 1;
+                string linha = string.Empty;
+                linha = read.ReadLine();  /// cabeçalho
+                while (cont == 1)
+                {
+                    List<string> dados = new List<string>();
+                    linha = read.ReadLine();
+                    if (linha == null)
+                        cont = 0;
+                    else
+                    {
+                        dados = linha.Split(';').ToList();
+               
+                        listaVendaCarros.Add(new Carro()
+                        {
+                            Id = int.Parse(dados[0]),
+                             Modelo = dados[1],
+                             Valor = double.Parse(dados[2]),
+                             Quantidade = int.Parse(dados[3]),
+                             DataVenda = DateTime.Parse(dados[4])
+                         }) ;
+                    }
 
-            #region Lista de Dados
+                }
+
+            }
+        }
+        
+         #region Lista de Dados
+            /*listaVendaCarros = new List<Carro>();
+
             listaVendaCarros.Add(new Carro() {Id =   1,Modelo= "Risus Company", Valor = 7200, Quantidade = 18, DataVenda = DateTime.Parse("29/01/2019") });
             listaVendaCarros.Add(new Carro() {Id =   2,Modelo= "Risus Associates", Valor = 9961, Quantidade =  4, DataVenda = DateTime.Parse("10/02/2019") });
             listaVendaCarros.Add(new Carro() {Id =   3,Modelo= "Et Libero Proin Foundation", Valor = 8710, Quantidade = 17, DataVenda = DateTime.Parse("24/01/2019") });
@@ -53,7 +88,7 @@ namespace VendaCarrosBiblioteca.Model
             listaVendaCarros.Add(new Carro() {Id =  36,Modelo= "Aliquet Molestie Tellus Corp.", Valor = 8779, Quantidade =  1, DataVenda = DateTime.Parse("05/07/2019") });
             listaVendaCarros.Add(new Carro() {Id =  37,Modelo= "Ipsum Corp.", Valor = 5568, Quantidade = 15, DataVenda = DateTime.Parse("10/03/2019") });
             listaVendaCarros.Add(new Carro() {Id =  38,Modelo= "Mi Lacinia Foundation", Valor = 7442, Quantidade = 20, DataVenda = DateTime.Parse("09/07/2019") });
-            listaVendaCarros.Add(new Carro() {Id =  39,Modelo= "Cubilia Curae; Corp.", Valor = 8421, Quantidade =  7, DataVenda = DateTime.Parse("26/05/2019") });
+            listaVendaCarros.Add(new Carro() {Id =  39,Modelo= "Cubilia Curae Corp.", Valor = 8421, Quantidade =  7, DataVenda = DateTime.Parse("26/05/2019") });
             listaVendaCarros.Add(new Carro() {Id =  40,Modelo= "Velit Sed Malesuada Associates", Valor = 9841, Quantidade =  6, DataVenda = DateTime.Parse("07/11/2019") });
             listaVendaCarros.Add(new Carro() {Id =  41,Modelo= "Duis Foundation", Valor = 9849, Quantidade =  6, DataVenda = DateTime.Parse("08/12/2019") });
             listaVendaCarros.Add(new Carro() {Id =  42,Modelo= "Erat Semper Consulting", Valor = 6168, Quantidade = 10, DataVenda = DateTime.Parse("10/11/2019") });
@@ -115,7 +150,9 @@ namespace VendaCarrosBiblioteca.Model
             listaVendaCarros.Add(new Carro() {Id =  98,Modelo= "Vitae Corp.", Valor = 7669, Quantidade =  7, DataVenda = DateTime.Parse("09/11/2019") });
             listaVendaCarros.Add(new Carro() {Id =  99,Modelo= "Malesuada Incorporated", Valor = 5960, Quantidade =  4, DataVenda = DateTime.Parse("26/09/2019") });
             listaVendaCarros.Add(new Carro() {Id = 100,Modelo= "Mauris Ltd", Valor = 8974, Quantidade = 18, DataVenda = DateTime.Parse("16/05/2019") });
+            */
             #endregion
-        }
+
+        public List<Carro> ListaDeVendasPublica { get { return listaVendaCarros; } }
     }
 }

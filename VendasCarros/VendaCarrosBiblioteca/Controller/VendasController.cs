@@ -11,10 +11,28 @@ namespace VendaCarrosBiblioteca.Controller
     {
         public VendasContext vendasContextDB = new VendasContext();
 
-       public List<Carro> listaCompleta()
+        /// <summary>
+        /// Metodo retorna lista completa de carros vendidos ordenada pela data de venda
+        /// </summary>
+        /// <returns></returns>
+       public List<Carro> ListaCompleta()
        {
-           return vendasContextDB.listaVendaCarros.OrderBy(x => x.Id).ToList();
+           return vendasContextDB.ListaDeVendasPublica;
        }
 
+        /// <summary>
+        /// Metodo retorno uma lista com filtro do mes de venda
+        /// </summary>
+        /// <param name="mesFiltro">Informa como parametro o mes para filtrar</param>
+        /// <returns></returns>
+        public List<Carro> RetornaListaFiltroMes(int mesFiltro=0)
+        {
+            if (mesFiltro == 0)
+                return vendasContextDB.ListaDeVendasPublica;
+            return vendasContextDB.ListaDeVendasPublica.FindAll(x => x.DataVenda.Month == mesFiltro);
+        }
+
+
+   
     }
 }

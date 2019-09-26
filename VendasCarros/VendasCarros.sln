@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendaCarrosInterface", "Ven
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendaCarrosBiblioteca", "VendaCarrosBiblioteca\VendaCarrosBiblioteca.csproj", "{14609FE6-FF43-4D8A-A029-21BE58E7B872}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{6F1493CB-AD9B-4E29-A59D-E2963DA76C72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{14609FE6-FF43-4D8A-A029-21BE58E7B872}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14609FE6-FF43-4D8A-A029-21BE58E7B872}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14609FE6-FF43-4D8A-A029-21BE58E7B872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1493CB-AD9B-4E29-A59D-E2963DA76C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1493CB-AD9B-4E29-A59D-E2963DA76C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1493CB-AD9B-4E29-A59D-E2963DA76C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1493CB-AD9B-4E29-A59D-E2963DA76C72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
