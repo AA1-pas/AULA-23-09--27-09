@@ -17,7 +17,7 @@ namespace ListagemDeCervejas.Controller
         /// <returns>Retorna a lista "cervejas" completa</returns>
         public List<Cerveja> GetListaCervejas ()
         {
-            return cervejaContext.cervejas;
+            return cervejaContext.ListaCervejas;
         }
 
         /// <summary>
@@ -30,8 +30,8 @@ namespace ListagemDeCervejas.Controller
         /// <param name="parametroAdd">Recebe os dados para cadastro conforme o objeto Cerveja</param>
         public void GetAdicionaCerveja(Cerveja parametroAdd )
         {
-            parametroAdd.Id = cervejaContext.contador++;
-            cervejaContext.cervejas.Add(parametroAdd);
+            parametroAdd.Id = cervejaContext.IdContador++;
+            cervejaContext.ListaCervejas.Add(parametroAdd);
            
         }
 
@@ -41,7 +41,7 @@ namespace ListagemDeCervejas.Controller
         /// <returns>Retorna um valor total</returns>
         public double GetRetornaValorTotal()
         {
-            return cervejaContext.cervejas.Sum(x => x.Valor);
+            return cervejaContext.ListaCervejas.Sum(x => x.Valor);
         }
         
         
@@ -51,7 +51,7 @@ namespace ListagemDeCervejas.Controller
         /// <returns>Retorna um valor total</returns>
         public double GetRetornaLitrosTotal()
         {
-            return cervejaContext.cervejas.Sum(x => x.Litros);
+            return cervejaContext.ListaCervejas.Sum(x => x.Litros);
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace ListagemDeCervejas.Controller
         /// <returns>Retorna o valor de gramas de alcol/litro de sangue</returns>
         public double GetRetornaTeorAlcoolSanguel(int peso)
         {
-            return cervejaContext.cervejas.Sum(x => (x.Litros * x.Alcool * 0.8) / (peso * 0.06125));
+            return cervejaContext.ListaCervejas.Sum(x => (x.Litros * x.Alcool * 0.8) / (peso * 0.06125));
       
         }
     }
