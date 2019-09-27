@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B57C36E3-FA74-4504-BD12-AD2369E31EE8}</ProjectGuid>
+    <ProjectGuid>{F585B2DE-2B95-4CAD-8086-5C6C3B5EC41B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ListarCarrosDoAmigo</RootNamespace>
-    <AssemblyName>ListarCarrosDoAmigo</AssemblyName>
+    <RootNamespace>ListagemDeCervejaInterface2</RootNamespace>
+    <AssemblyName>ListagemDeCervejaInterface2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ListagemDeCarros, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Desktop\34\ListagemDeCarros.dll</HintPath>
+    <Reference Include="ListagemDeCerveja">
+      <HintPath>\\svprwy001\alunos\hbsis\DllsComComentarios\38\ListagemDeCerveja.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
